@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "Project.cpp",                 // Your source file
+                "-o", "sfmltest",              // Output executable
+                "-L/usr/lib/x86_64-linux-gnu", // SFML library path
+                "-lsfml-graphics",             // Link SFML Graphics
+                "-lsfml-window",               // Link SFML Window
+                "-lsfml-system"                // Link SFML System
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by Debugger."
+        }
+    ]
+}
